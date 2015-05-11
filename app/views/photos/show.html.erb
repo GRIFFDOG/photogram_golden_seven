@@ -1,0 +1,27 @@
+<h1>Individual Photo</h1>
+
+<table>
+  <tr>
+    <th>Thumbnail</th>
+    <th>Caption</th>
+    <th colspan="3">Actions</th>
+  </tr>
+  <tr>
+    <td>
+      <img src="<%= @specificPhoto.source %>" width="80">
+    </td>
+    <td>
+      <%= @specificPhoto.caption %>
+    </td>
+    <td>
+      <a href="http://localhost:3000/photos/<%= @specificPhoto.id %>">Show</a>
+    </td>
+    <td>
+      <a href="http://localhost:3000/photos/<%= @specificPhoto.id %>/edit">Edit</a>
+    </td>
+    <td>
+      <a href="http://localhost:3000/delete_photo/<%= @specificPhoto.id %>">Delete</a>
+    </td>
+  </tr>
+</table>
+
